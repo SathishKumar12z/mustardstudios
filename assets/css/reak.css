@@ -5989,9 +5989,10 @@ input[type=color] {
 }
 @media (max-width: 767px) {
   .oit-hero-5-glob {
-    height: 360px;
-    width: 360px;
-    margin-top: -100px;
+    width: min(88vw, 360px);
+    height: auto;
+    aspect-ratio: 720 / 722;
+    margin-top: -55px;
   }
 }
 .oit-hero-5-glob::after {
@@ -6001,6 +6002,9 @@ input[type=color] {
   background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 35%, rgba(0, 0, 0, 0) 75%);
 }
 .oit-hero-5-glob img {
+  display: block;
+  width: 100%;
+  height: auto;
   animation: shape-rotate 60s linear infinite;
 }
 .oit-hero-5-bottom {
